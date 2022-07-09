@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>MarionetteAdapter</AssemblyName>
+    <RootNamespace>MarionetteAdapter</RootNamespace>
+    <Configurations>Debug;Release;ReleaseUnityEditor</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>$(SolutionDir)Addon\$(Platform)\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnityEditor|AnyCPU'">
+    <OutputPath>$(SolutionDir)Addon\$(Platform)\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)MarionetteProxy\MarionetteProxy.csproj" />
+    <ProjectReference Include="$(SolutionDir)MarionetteUtils\MarionetteUtils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>Lib\Harmony\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="chabuk.manikinmono">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\chabuk.manikinmono.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ThunderRoad">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\ThunderRoad.dll</HintPath>
+    </Reference>
+    <Reference Include="ThunderRoad.Plugins">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\ThunderRoad.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Blade &amp; Sorcery\BladeAndSorcery_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

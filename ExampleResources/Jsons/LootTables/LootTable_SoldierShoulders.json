@@ -1,0 +1,14 @@
+{
+  "$type": "ThunderRoad.LootTable, ThunderRoad",
+  "id": "SoldierShoulders",
+  "saveFolder": "bas",
+  "version": 1,
+  "drops": [
+    {
+      "$type": "ThunderRoad.LootTable+Drop, ThunderRoad",
+      "referenceID": "ApparelMarionetteDemoShoulder",
+      "reference": "Item",
+      "probabilityWeight": 1.0
+    }
+  ]
+}

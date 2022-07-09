@@ -1,0 +1,14 @@
+{
+  "$type": "ThunderRoad.LootTable, ThunderRoad",
+  "id": "Hairs",
+  "saveFolder": "bas",
+  "version": 1,
+  "drops": [
+    {
+      "$type": "ThunderRoad.LootTable+Drop, ThunderRoad",
+      "referenceID": "ApparelMarionetteDemoHair",
+      "reference": "Item",
+      "probabilityWeight": 2.0
+    }
+  ]
+}
