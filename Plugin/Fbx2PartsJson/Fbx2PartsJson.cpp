@@ -198,7 +198,16 @@ int main()
 	OpenFBXFile(filepath);
 
 	std::vector<MeshPart> meshParts = GetMeshParts();
-	DumpMeshPartsToJson(std::string(filepath) + ".parts", meshParts);
+
+	if (!meshParts.empty())
+	{
+		DumpMeshPartsToJson(std::string(filepath) + ".parts", meshParts);
+	}
+	else
+	{
+		std::cout << "No mesh parts found in the provided FBX file. Make sure the models inside the rig are postfixed with _LOD<n>." << std::endl;
+		return 1;
+	}
 
 	LocalFree(szArgList);
 	
